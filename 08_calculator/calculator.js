@@ -18,8 +18,15 @@ const power = function(a, b) {
 	return a**b;
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+	if ( a === 0 || a === 1 ) return 1;
+
+  let factorial = 1;
+  for (let factor = 1; factor <= a; factor++){
+    factorial *= factor;
+  }
+
+  return factorial;
 };
 
 // Do not edit below this line
